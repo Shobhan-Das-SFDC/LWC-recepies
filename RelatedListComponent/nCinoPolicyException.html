@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Policy Exception Records">
+        <lightning-datatable data={records} columns={columns}  hide-checkbox-column onrowaction={handleRowAction} key-field="Id">
+        </lightning-datatable>
+        <c-n-cino-credit-exception if:true={showComponent} record-id={peId} parent-id={accId} ></c-n-cino-credit-exception>
+    </lightning-card>
+</template>
